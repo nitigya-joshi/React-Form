@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #9152f8;
+  background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+  padding: 5px 20px 15px 20px;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 625px;
+  height: 1200px;
+}
+
+.navbar {
+  background-color: #1118f5cf;
+  width: 100%;
+}
+
+.b1 {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgb(255, 3, 221);
+  border-radius: 3px;
+  margin: 5px;
+}
+
+fieldset {
+  background-color: white;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 2px solid rgb(255, 3, 221);
+}
+
+.boxy {
+  display: grid;
+}
+
+#but {
+  width: 25%;
+  margin: auto;
+  padding: 6px 5px;
+  border: 3px solid rgb(5, 30, 247);
+  color: azure;
+  font-weight: bold;
+  font-size: 23px;
+  border-radius: 8px;
+  background-color: rgba(74, 176, 216, 0.801);
+  display: flex;
+  justify-content: center;
+}
+
+#but:hover {
+  background-color: dodgerblue;
+}

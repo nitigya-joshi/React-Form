@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import NavHead from "./components/NavHead";
+import Registration from "./components/Registration";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [data, setData] = useState({
+		fname: "",
+		mname: "",
+		lname: "",
+		email: "",
+		password: "",
+		course: "",
+		gender: "",
+		phone: "",
+		address: "",
+	});
+
+	const handleInputChange = (e) => {
+		const { name, value } = e.target;
+
+		setData((prevState) => ({
+			...prevState,
+			[name]: value,
+		}));
+	};
+
+	return (
+		<>
+			<NavHead />
+			<Registration data={data} handleChange={handleInputChange} />
+		</>
+	);
 }
 
 export default App;
