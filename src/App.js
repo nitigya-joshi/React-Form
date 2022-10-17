@@ -4,7 +4,7 @@ import NavHead from "./components/NavHead";
 import Registration from "./components/Registration";
 
 function App() {
-	const [data, setData] = useState({
+	const obj={
 		fname: "",
 		mname: "",
 		lname: "",
@@ -14,7 +14,8 @@ function App() {
 		gender: "",
 		phone: "",
 		address: "",
-	});
+	}
+	const [data, setData] = useState(obj);
 
 	const handleInputChange = (e) => {
 		const { name, value } = e.target;
