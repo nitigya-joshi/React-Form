@@ -1,4 +1,5 @@
                         Contributor list
 ---------------------------------------------------------------------
-Nitigya Joshi
-Anmol Singh
+Nitigya Joshi\
+Anmol Singh\
+Abhishek Singh
